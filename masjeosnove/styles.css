@@ -1,0 +1,98 @@
+.right {
+    float: right;
+    width:  178px;
+    height:  23px;
+    background-color: lightblue;
+}
+body
+{
+    background-color: bisque;
+}
+header
+{
+    white-space: nowrap;
+} 
+
+a
+{
+    color:black;    
+}
+.button-container {
+    display: grid;
+    place-items: center; /* Выравнивание элементов по центру в обоих направлениях */
+     /* Высота контейнера равна высоте окна просмотра */
+}
+
+.button {
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    outline: none;
+    display: inline-block;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 12px 16px;
+    color: #fff;
+    background:  #2196f3;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    margin: 12px;
+  }
+   
+  .button::before,
+  .button::after {
+    content: "";
+    position: absolute;
+    transition: all 0.3s;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  .button::before {
+    background: rgba(248, 39, 39, 0.664);
+  }
+  /* --- Кнопка 1 --- */
+  
+  #button-1 i {
+    color: #3793af;
+  }
+  
+  #button-1::before,
+  #button-1:active::before {
+    opacity: 0;
+    transform: scale(1, 0.1);
+  }
+  
+  #button-1:hover::before {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+
+h1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.identification_marks
+{
+  display: block;
+  margin-left:  85%;
+  text-align: right;
+}
+.image {
+  /* Установите ширину и высоту изображения по вашему усмотрению */
+  width:  30px;
+  height:  30px;
+  margin-right:  65%;
+}
+.text
+{
+  margin-top: -10%;
+}
+
+
